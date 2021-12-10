@@ -22,42 +22,8 @@ namespace snake
             Point p4 = new Point(3, 7, '@');
             p4.Draw();
 
-            List<int> numList = new List<int>();
-            numList.Add (0);
-            numList.Add (1);
-            numList.Add (2);
-
-            int x = numList[0];
-            int y = numList[1];
-            int z = numList[2];
-
-            foreach(int i in numList)
-            {
-                Console.WriteLine(i);
-            }
-
-            List<Point> pList = new List<Point>();
-
-            pList.Add (p1);
-            pList.Add (p2);
-            pList.Add (p3);
-            pList.Add (p4);
-
-            List<char> charList = new List<char> ();
-
-            charList.Add('*');
-            charList.Add('&');
-            charList.Add('^');
-            charList.Add('%');
-            charList.Add('$');
-            charList.Add('#');
-            charList.Add('@');
-            charList.Add('!');
-
-            foreach (char b in charList)
-            {
-                Console.WriteLine(b);
-            }
+            HorizontalLines line1 = new HorizontalLines(4, 25, 8, '=');
+            line1.Draw();
 
             Console.ReadLine();
         }
