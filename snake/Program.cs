@@ -25,6 +25,9 @@ namespace snake
             HorizontalLines line1 = new HorizontalLines(4, 25, 8, '=');
             line1.Draw();
 
+            VerticalLine line2 = new VerticalLine(12, 4, 23, '%');
+            line2.Draw();
+            
             Console.ReadLine();
         }
 
