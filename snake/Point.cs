@@ -30,13 +30,24 @@ namespace snake
             sym = p.sym;
         }
 
-        public void Move ( Point p, Direction direction)
+        public void Move ( int offset, Direction direction)
         {
             if (direction == Direction.RIGHT)
             {
-                p.x = x + 1;
+                x = x + offset;
             }
-
+            else if (direction == Direction.LEFT)
+            {
+                x = x - offset;
+            }
+            else if (direction == Direction.DOWN)
+            {
+                y = y + offset;
+            }
+            else
+            {
+                y = y - offset;
+            }
         }
 
         public void Draw()
